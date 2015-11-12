@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Simple UIX/Template</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="blind"></div>
+        <div id="sidebar">
+            <div class="navbar navbar-default" id="offcanvas-navbar-toggle">
+                <button type="button" class="navbar-toggle c-hamburger c-hamburger--htx" ng-class="{'is-active':__SIDEBAR_OPEN}" id="menu-toggle-1" ng-click="__toggleSideBar()" >
+                   <span>Toggle Menu</span>
+                </button>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <div id="user-name"> User Name</div>
+                    <div id="school-name">School Name {{__APP_READY}}</div>
+                </li>
+                <li class="separator">
+                </li>
+                <li ng-repeat>
+                </li>
+            </ul>
+        </div>
+        <div id-"navbar"></div>
+        <div id="content">
+            <div class="container" ng-view ></div>
+        </div>
+    </div>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script data-main="config/main.js" src="bower_components/requirejs/require.js"> </script>
+</body>
+</html>
