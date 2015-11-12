@@ -12,6 +12,13 @@ body{ overflow-x:hidden;}
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+.blur{
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+}
 #wrapper {
     padding-left: 0;
 }
